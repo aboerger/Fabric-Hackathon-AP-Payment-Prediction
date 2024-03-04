@@ -1,0 +1,2301 @@
+{
+  "name": "SM_AP",
+  "id": "76fff30b-68fc-4306-a402-a7eddbe034ee",
+  "compatibilityLevel": 1604,
+  "model": {
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "document_types",
+        "lineageTag": "8a2458de-473c-45bb-9fd9-59718ecb237a",
+        "sourceLineageTag": "[dbo].[document_types]",
+        "columns": [
+          {
+            "name": "document_type",
+            "dataType": "string",
+            "sourceColumn": "document_type",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "321a91bb-fd30-4eb1-bdaa-4f0639bbe59e",
+            "sourceLineageTag": "document_type",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "document_type_description",
+            "dataType": "string",
+            "sourceColumn": "document_type_description",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "519fb2dc-5a98-4d7d-8600-a91f7a4e54c7",
+            "sourceLineageTag": "document_type_description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "document_type_combined_description",
+            "dataType": "string",
+            "sourceColumn": "document_type_combined_description",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "323496dd-aba7-498d-9ecd-c5c28400f6ae",
+            "sourceLineageTag": "document_type_combined_description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "document_types",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "document_types",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "company_codes",
+        "lineageTag": "7828fd64-4207-4091-bdae-3dc865d654b5",
+        "sourceLineageTag": "[dbo].[company_codes]",
+        "columns": [
+          {
+            "name": "company_code",
+            "dataType": "string",
+            "sourceColumn": "company_code",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "e802a46d-ccc6-4d2e-be1e-dbb8bed8ebce",
+            "sourceLineageTag": "company_code",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "company_description",
+            "dataType": "string",
+            "sourceColumn": "company_description",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "248dbed0-e3ba-47c3-b46a-d8a7765e32bb",
+            "sourceLineageTag": "company_description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "company_code_combined_description",
+            "dataType": "string",
+            "sourceColumn": "company_code_combined_description",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "2ecbcfc2-f16f-47e9-aa30-086995a40d36",
+            "sourceLineageTag": "company_code_combined_description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "chart_of_accounts",
+            "dataType": "string",
+            "sourceColumn": "chart_of_accounts",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "b035aaae-d5ec-4d94-9ca2-83266235f1bc",
+            "sourceLineageTag": "chart_of_accounts",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "company_codes",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "company_codes",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "vendors",
+        "lineageTag": "83fa829c-9c16-4ef9-a749-34fd52ca76eb",
+        "sourceLineageTag": "[dbo].[vendors]",
+        "columns": [
+          {
+            "name": "vendor_number",
+            "dataType": "string",
+            "sourceColumn": "vendor_number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "5ef562cd-0e14-49bf-9da7-3e167c4b6fda",
+            "sourceLineageTag": "vendor_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "vendor_number_trimmed",
+            "dataType": "string",
+            "sourceColumn": "vendor_number_trimmed",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "5e856276-38c2-4e05-b2e7-08099aaa5670",
+            "sourceLineageTag": "vendor_number_trimmed",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "vendor_name_1",
+            "dataType": "string",
+            "sourceColumn": "vendor_name_1",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "72969728-24f2-4e75-8023-14d18aa1002c",
+            "sourceLineageTag": "vendor_name_1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "vendor_name_2",
+            "dataType": "string",
+            "sourceColumn": "vendor_name_2",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "648d9581-fed5-480d-873f-3f07f031fac1",
+            "sourceLineageTag": "vendor_name_2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "vendor_combined_description",
+            "dataType": "string",
+            "sourceColumn": "vendor_combined_description",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "238fc6d5-ae55-479a-88bf-fa3d3b0a58e5",
+            "sourceLineageTag": "vendor_combined_description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "sort_field",
+            "dataType": "string",
+            "sourceColumn": "sort_field",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "4f9e3171-526e-490f-a44e-e11941817835",
+            "sourceLineageTag": "sort_field",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "postal_code",
+            "dataType": "string",
+            "sourceColumn": "postal_code",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "a4df98cd-7514-4e7a-91f7-34c69e508d5a",
+            "sourceLineageTag": "postal_code",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "d8451926-558c-4de3-a369-8b47262e0bee",
+            "sourceLineageTag": "city",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "region",
+            "dataType": "string",
+            "sourceColumn": "region",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "acd6d16c-8f59-431a-ada7-cd0104368e0b",
+            "sourceLineageTag": "region",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "country_key",
+            "dataType": "string",
+            "sourceColumn": "country_key",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "4636cc49-3f27-4888-b572-e8983935707f",
+            "sourceLineageTag": "country_key",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "address",
+            "dataType": "string",
+            "sourceColumn": "address",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "016a26ed-a5f6-4970-936a-01c62c6b532b",
+            "sourceLineageTag": "address",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "telephone_number",
+            "dataType": "string",
+            "sourceColumn": "telephone_number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "0d1e4039-65e9-4da8-aded-dbc0fe7fbc8b",
+            "sourceLineageTag": "telephone_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "fax_number",
+            "dataType": "string",
+            "sourceColumn": "fax_number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "f5533c5e-de36-4bb7-8c2f-8a9571c1fba4",
+            "sourceLineageTag": "fax_number",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vendors",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "vendors",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "_measures",
+        "lineageTag": "7943d9d7-c9ba-462c-8a0a-b5d0f2068110",
+        "sourceLineageTag": "[dbo].[_measures]",
+        "columns": [
+          {
+            "name": "z_column1",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "column1",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "302b75dd-511f-4238-a0f5-0ad390a9170d",
+            "sourceLineageTag": "column1",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              },
+              {
+                "property": "Name"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_measures",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "_measures",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Before Due Balance (GC)",
+            "description": "This measure calculates the sum of the 'amount_group_currency' field in the 'ap_line_items' table for all records where the 'clearing_date' is either blank or later than the maximum date in the 'calendar' table, and the 'net_due_date' is on or after the maximum date in the 'calendar' table. The calculation is performed up to the maximum date in the 'calendar' table.",
+            "expression": [
+              "",
+              "    CALCULATE(",
+              "        SUM(ap_line_items_scored[amount_group_currency]),",
+              "        OR(",
+              "            ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        ap_line_items_scored[net_due_date] >= MAX('calendar'[date]),",
+              "        FILTER(",
+              "            ALL('calendar'[date]),",
+              "            'calendar'[date] <= MAX('calendar'[date])",
+              "        )",
+              "    )"
+            ],
+            "lineageTag": "747af4d9-baad-459b-bee7-0a8729faec93",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "DisplayFolder"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Overdue Balance (GC)",
+            "description": "The 'Overdue Balance (GC)' measure calculates the sum of the 'amount_group_currency' field from the 'ap_line_items' table for all records where the 'clearing_date' is either blank or greater than the maximum date in the 'calendar' table, and the 'net_due_date' is equal to or greater than the maximum date in the 'calendar' table. The calculation is performed up to the maximum date in the 'calendar' table.",
+            "expression": [
+              "",
+              "    CALCULATE(",
+              "        SUM(ap_line_items_scored[amount_group_currency]),",
+              "        OR(",
+              "            ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        ap_line_items_scored[net_due_date] >= MAX('calendar'[date]),",
+              "        FILTER(",
+              "            ALL('calendar'[date]),",
+              "            'calendar'[date] <= MAX('calendar'[date])",
+              "        )",
+              "    )"
+            ],
+            "lineageTag": "6de2bb40-df1e-4966-8131-fee324444082",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "Open Balance (GC)",
+            "description": "The 'Open Balance (GC)' measure calculates the sum of the 'amount_group_currency' field from the 'ap_line_items' table. It includes only those records where the 'clearing_date' is either blank or greater than the maximum date in the 'calendar' table, and where the 'calendar' date is less than or equal to the maximum 'calendar' date.",
+            "expression": [
+              "",
+              "    CALCULATE(",
+              "        SUM(ap_line_items_scored[amount_group_currency]),",
+              "        OR(",
+              "            ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        FILTER(",
+              "            ALL('calendar'[date]),",
+              "            'calendar'[date] <= MAX('calendar'[date])",
+              "        )",
+              "    )"
+            ],
+            "lineageTag": "79a5ce40-8f1d-442e-b7ae-2a2ffda714af",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "No. of Open Invoices",
+            "description": "This measure calculates the distinct count of accounting documents in the 'ap_line_items' table. It only includes documents of specific types and those that are either not cleared or have a clearing date later than the maximum date in the 'calendar' table.",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    DISTINCTCOUNT(ap_line_items_scored[accounting_document]),",
+              "        OR(",
+              "            document_types[document_type] = \"RE\", ",
+              "            document_types[document_type] = \"KR\"",
+              "            ),",
+              "    OR(",
+              "        ISBLANK(ap_line_items_scored[clearing_date] ),",
+              "        ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "    ),",
+              "    FILTER(",
+              "        ALL('calendar'[date]),",
+              "        'calendar'[date] <= MAX('calendar'[date])",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "07bc3447-40ab-4d2f-8176-749258ef3415",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              }
+            ]
+          },
+          {
+            "name": "No. of Invoices Cleared",
+            "description": "This measure calculates the distinct count of accounting documents in the 'ap_line_items' table where the document type matches one of two specified string literals. It uses a relationship between the 'calendar' table's date and the 'ap_line_items' table's clearing date.",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    DISTINCTCOUNT(ap_line_items_scored[accounting_document]),",
+              "    OR(",
+              "        ap_line_items_scored[document_type] = \"RE\", ",
+              "        ap_line_items_scored[document_type]  = \"KR\"",
+              "    ),",
+              "    USERELATIONSHIP('calendar'[date], ap_line_items_scored[clearing_date])",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "652c2b54-f766-4fb4-8341-ce3bff559c5f",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              }
+            ]
+          },
+          {
+            "name": "Avg. Invoice Cleared in Days",
+            "description": "This measure calculates the average number of days it takes to clear an invoice. It does this by subtracting the baseline date from the clearing date for each line item in the 'ap_line_items' table. The measure only considers line items of certain document types and those that have a non-blank clearing date or a clearing date that is later than the maximum date in the 'calendar' table.",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGEX(",
+              "        ap_line_items_scored,",
+              "        ap_line_items_scored[clearing_date] - ap_line_items_scored[baseline_date]",
+              "    ),",
+              "        OR(",
+              "        ap_line_items_scored[document_type] = \"RE\", ",
+              "        ap_line_items_scored[document_type] = \"KR\"",
+              "    ),",
+              "    OR(",
+              "        NOT ISBLANK(ap_line_items_scored[clearing_date]),",
+              "        ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "    )",
+              ")"
+            ],
+            "formatString": "0.0",
+            "lineageTag": "4400e948-da41-41a4-8576-134ec5419d88",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Invoices Cleared Before Due %",
+            "description": "This measure calculates the percentage of invoices that were cleared before their due date. It does this by dividing the number of distinct accounting documents that were cleared before their due date by the total number of distinct accounting documents that have a clearing date.",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    CALCULATE(",
+              "        DISTINCTCOUNT(ap_line_items_scored[accounting_document]),",
+              "        OR(",
+              "            ap_line_items_scored[document_type] = \"RE\", ",
+              "            ap_line_items_scored[document_type] = \"KR\"",
+              "        ),",
+              "        OR(",
+              "            NOT ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        ap_line_items_scored[clearing_date] <= ap_line_items_scored[net_due_date]",
+              "    )",
+              "    ,",
+              "    CALCULATE(",
+              "        DISTINCTCOUNT(ap_line_items_scored[accounting_document]),",
+              "        OR(",
+              "            ap_line_items_scored[document_type] = \"RE\", ",
+              "            ap_line_items_scored[document_type] = \"KR\"",
+              "        ),",
+              "        OR(",
+              "            NOT ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        )",
+              "    ),",
+              "    1",
+              ")"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "aa202c10-784c-476d-9f2e-c657b74d6fbd",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Avg. Invoice Overdue Days",
+            "description": "This measure calculates the average number of days that invoices are overdue. It does this by subtracting the net due date from the current date for each line item in the 'ap_line_items' table, but only for those line items where the clearing date is either blank or later than the current date, and where the current date is later than the net due date.",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGEX(",
+              "        ap_line_items_scored,",
+              "        MAX('calendar'[date]) - ap_line_items_scored[net_due_date]",
+              "    ),",
+              "    OR(",
+              "        ISBLANK(ap_line_items_scored[clearing_date]),",
+              "        ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "    ),",
+              "    MAX('calendar'[date]) > ap_line_items_scored[net_due_date]",
+              ")"
+            ],
+            "formatString": "0.0",
+            "lineageTag": "dd5be08e-e38d-4620-b88d-416963255ea6",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue Balance %",
+            "description": "The 'Overdue Balance %' measure calculates the percentage of the overdue balance to the open balance. It uses the DIVIDE function to divide the 'Overdue Balance (GC)' by the 'Open Balance (GC)', returning 1 if the 'Open Balance (GC)' is zero.",
+            "expression": "DIVIDE([Overdue Balance (GC)],[Open Balance (GC)],1)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "ad08bc94-0dcf-4e70-bd04-ab1948552c83",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Avg. Payment Terms",
+            "description": "This measure calculates the average payment terms in days from the baseline date for payment. It does this for each line item in the 'ap_line_items' table where the document type is either of two specific string literals.",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGEX(",
+              "        ap_line_items_scored,",
+              "        RELATED(payment_terms[days_from_baseline_date_for_payment])",
+              "    ),",
+              "    OR(",
+              "        ap_line_items_scored[document_type] = \"RE\", ",
+              "        ap_line_items_scored[document_type] = \"KR\"",
+              "    )",
+              ")"
+            ],
+            "formatString": "0.0",
+            "lineageTag": "a5977305-d799-4253-b326-a90521039943",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue 1-30 Days",
+            "description": "This measure, 'Overdue 1-30 Days', calculates the sum of the 'amount_group_currency' field from the 'ap_line_items' table for all records where the 'net_due_date' is less than the maximum date in the 'calendar' table and the 'clearing_date' is either blank or greater than the maximum date in the 'calendar' table. The measure only considers records where the difference between the 'net_due_date' and the maximum date in the 'calendar' table is between 1 and 30 days.",
+            "expression": [
+              "",
+              "VAR ",
+              "    _KeyDate = MAX('calendar'[date])",
+              "RETURN",
+              "    CALCULATE(",
+              "        SUM(ap_line_items_scored[amount_group_currency]),",
+              "        OR(",
+              "            ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        ap_line_items_scored[net_due_date] < MAX('calendar'[date]),",
+              "        FILTER(",
+              "            ALL('calendar'[date]),",
+              "            'calendar'[date] <= MAX('calendar'[date])",
+              "        ),",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) > 0,",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) <= 30",
+              "    )"
+            ],
+            "formatString": "#,0.00",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "ee595bb1-4d7b-4f3d-aae7-24fa8df2e48b",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue 31-60 Days",
+            "description": "The 'Overdue 31-60 Days' measure calculates the total amount of accounts payable line items that are overdue by 31 to 60 days. It does this by summing the amounts of all line items that have either not been cleared or have a clearing date later than the maximum date in the calendar, and whose net due date is earlier than the maximum date in the calendar.",
+            "expression": [
+              "",
+              "VAR ",
+              "    _KeyDate = MAX('calendar'[date])",
+              "RETURN",
+              "    CALCULATE(",
+              "        SUM(ap_line_items_scored[amount_group_currency]),",
+              "        OR(",
+              "            ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        ap_line_items_scored[net_due_date] < MAX('calendar'[date]),",
+              "        FILTER(",
+              "            ALL('calendar'[date]),",
+              "            'calendar'[date] <= MAX('calendar'[date])",
+              "        ),",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) > 30,",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) <= 60",
+              "    )"
+            ],
+            "formatString": "#,0.00",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "05dbaa8b-45d8-406c-9ad6-8a4043e2685e",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue 61-90 Days",
+            "description": "This measure, 'Overdue 61-90 Days', calculates the total amount of overdue payments that are between 61 and 90 days late. It does this by summing the amounts of all line items that have either not been cleared or were cleared after the maximum date in the calendar, and whose net due date is before the maximum date in the calendar.",
+            "expression": [
+              "",
+              "VAR ",
+              "    _KeyDate = MAX('calendar'[date])",
+              "RETURN",
+              "    CALCULATE(",
+              "        SUM(ap_line_items_scored[amount_group_currency]),",
+              "        OR(",
+              "            ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        ap_line_items_scored[net_due_date] < MAX('calendar'[date]),",
+              "        FILTER(",
+              "            ALL('calendar'[date]),",
+              "            'calendar'[date] <= MAX('calendar'[date])",
+              "        ),",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) > 60,",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) <= 90",
+              "    )"
+            ],
+            "formatString": "#,0.00",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "eaf7f21f-6bbf-4b21-bbfd-d3cfbf2e6a2c",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue 91-120 Days",
+            "description": "This measure calculates the total amount of overdue payments that are between 91 and 120 days late. It does this by summing the amounts of all line items that have either not been cleared or have a clearing date later than the maximum date in the calendar, and have a net due date earlier than the maximum date in the calendar.",
+            "expression": [
+              "",
+              "VAR ",
+              "    _KeyDate = MAX('calendar'[date])",
+              "RETURN",
+              "    CALCULATE(",
+              "        SUM(ap_line_items_scored[amount_group_currency]),",
+              "        OR(",
+              "            ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        ap_line_items_scored[net_due_date] < MAX('calendar'[date]),",
+              "        FILTER(",
+              "            ALL('calendar'[date]),",
+              "            'calendar'[date] <= MAX('calendar'[date])",
+              "        ),",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) > 90,",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) <= 120",
+              "    )"
+            ],
+            "formatString": "#,0.00",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "3cbd3021-814b-4bbf-96a8-02fc8bf65b63",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue >120 Days",
+            "description": "This measure, 'Overdue >120 Days', calculates the total amount of overdue payments that are more than 120 days past their due date. It considers all payments that are either not cleared or cleared after the maximum date in the 'calendar' table.",
+            "expression": [
+              "",
+              "VAR ",
+              "    _KeyDate = MAX('calendar'[date])",
+              "RETURN",
+              "    CALCULATE(",
+              "        SUM(ap_line_items_scored[amount_group_currency]),",
+              "        OR(",
+              "            ISBLANK(ap_line_items_scored[clearing_date]),",
+              "            ap_line_items_scored[clearing_date] > MAX('calendar'[date])",
+              "        ),",
+              "        ap_line_items_scored[net_due_date] < MAX('calendar'[date]),",
+              "        FILTER(",
+              "            ALL('calendar'[date]),",
+              "            'calendar'[date] <= MAX('calendar'[date])",
+              "        ),",
+              "        DATEDIFF(ap_line_items_scored[net_due_date], _KeyDate, DAY) > 120",
+              "    )"
+            ],
+            "formatString": "#,0.00",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "f8bfebaa-5de6-4f3e-944e-50d1a37278cd",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue >120 Days %",
+            "description": "This measure, named 'Overdue >120 Days %', calculates the percentage of the open balance that is overdue by more than 120 days. It does this by dividing the amount overdue by more than 120 days by the total open balance.",
+            "expression": "DIVIDE([Overdue >120 Days],[Open Balance (GC)],1)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "13a9120e-8075-4add-a5a4-071b15266789",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue 91-120 Days %",
+            "description": "The 'Overdue 91-120 Days %' measure calculates the percentage of open balances that are overdue between 91 and 120 days. It does this by dividing the 'Overdue 91-120 Days' measure by the 'Open Balance (GC)' measure.",
+            "expression": "DIVIDE([Overdue 91-120 Days],[Open Balance (GC)],1)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "a88298e1-83fb-4438-b6b8-a6fb93d01bc3",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue 61-90 Days %",
+            "description": "The 'Overdue 61-90 Days %' measure calculates the percentage of open balances that are overdue between 61 and 90 days. It does this by dividing the 'Overdue 61-90 Days' measure by the 'Open Balance (GC)' measure.",
+            "expression": "DIVIDE([Overdue 61-90 Days],[Open Balance (GC)],1)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "e77e2c38-6cdd-4476-a700-91b5827bbea6",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue 31-60 Days %",
+            "description": "The 'Overdue 31-60 Days %' measure calculates the percentage of the open balance that is overdue by 31 to 60 days. It does this by dividing the amount overdue by 31 to 60 days by the total open balance.",
+            "expression": "DIVIDE([Overdue 31-60 Days],[Open Balance (GC)],1)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "11da19ac-d924-42d3-acef-8552c75e4845",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Overdue 1-30 Days %",
+            "description": "The 'Overdue 1-30 Days %' measure calculates the percentage of the open balance that is overdue by 1 to 30 days. It does this by dividing the amount overdue by 1-30 days by the total open balance.",
+            "expression": "DIVIDE([Overdue 1-30 Days],[Open Balance (GC)],1)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "displayFolder": "Aging Buckets",
+            "lineageTag": "4e35680f-0edf-4319-a30f-cb698d4276d3",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "DisplayFolder"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "Before Due Balance %",
+            "description": "The 'Before Due Balance %' measure calculates the percentage of the balance that is due before the due date. It is computed by dividing the 'Before Due Balance (GC)' by the 'Open Balance (GC)', with a default value of 1 if the 'Open Balance (GC)' is zero.",
+            "expression": "DIVIDE([Before Due Balance (GC)],[Open Balance (GC)],1)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "27b197dc-54f1-43a3-993a-7c7f0ae7f58f",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          },
+          {
+            "name": "No. of Overdue Invoices Cleared",
+            "description": "This measure calculates the distinct count of accounting documents in the 'ap_line_items' table where the document type is either of two specified string literals, and the clearing date is later than the net due date. It uses a relationship between the 'calendar' date and the 'ap_line_items' clearing date.",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    DISTINCTCOUNT(ap_line_items_scored[accounting_document]),",
+              "    OR(",
+              "        document_types[document_type] = \"DR\", ",
+              "        document_types[document_type] = \"RV\"",
+              "    ),",
+              "    USERELATIONSHIP('calendar'[date], ap_line_items_scored[clearing_date]),",
+              "    ap_line_items_scored[clearing_date] > ap_line_items_scored[net_due_date]",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "8b727581-6e37-4afb-97f4-45d867910a6e",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "Description"
+              }
+            ]
+          },
+          {
+            "name": "Open Balance (GC) MoM%",
+            "description": "This measure, 'Open Balance (GC) MoM%', calculates the month-over-month percentage change in the 'Open Balance (GC)'. It does this by subtracting the 'Open Balance (GC)' of the previous month from the current month's 'Open Balance (GC)', and then dividing the result by the 'Open Balance (GC)' of the previous month.",
+            "expression": [
+              "",
+              "VAR __PREV_MONTH = CALCULATE([Open Balance (GC)], DATEADD('Calendar'[Date], -1, MONTH))",
+              "RETURN",
+              "\tDIVIDE([Open Balance (GC)] - __PREV_MONTH, __PREV_MONTH)"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "7a5cbeef-e685-4dab-9ade-74e12d0c1a39",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "FormatString"
+              },
+              {
+                "property": "Description"
+              }
+            ]
+          },
+          {
+            "name": "Overdue Balance (GC) MoM%",
+            "description": "This measure, 'Overdue Balance (GC) MoM%', calculates the month-over-month percentage change in the overdue balance. It does this by subtracting the overdue balance of the previous month from the current month's overdue balance and then dividing the result by the previous month's overdue balance.",
+            "expression": [
+              "",
+              "VAR __PREV_MONTH = CALCULATE([Overdue Balance (GC)], DATEADD('Calendar'[Date], -1, MONTH))",
+              "RETURN",
+              "\tDIVIDE([Overdue Balance (GC)] - __PREV_MONTH, __PREV_MONTH)"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "6e09e1e1-a725-4cf4-af80-87ba044260c1",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "FormatString"
+              },
+              {
+                "property": "Description"
+              }
+            ]
+          },
+          {
+            "name": "Before Due Balance (GC) MoM%",
+            "description": "This measure, 'Before Due Balance (GC) MoM%', calculates the month-over-month percentage change in the 'Before Due Balance (GC)'. It does this by comparing the current month's 'Before Due Balance (GC)' to the previous month's.",
+            "expression": [
+              "",
+              "VAR __PREV_MONTH = CALCULATE([Before Due Balance (GC)], DATEADD('Calendar'[Date], -1, MONTH))",
+              "RETURN",
+              "\tDIVIDE([Before Due Balance (GC)] - __PREV_MONTH, __PREV_MONTH)"
+            ],
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "743b4a55-4cd3-4b96-b66e-949588e90371",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "FormatString"
+              },
+              {
+                "property": "Description"
+              }
+            ]
+          },
+          {
+            "name": "Predicted Payment Delta",
+            "expression": "AVERAGE(ap_line_items_scored[predicted_days_to_pay])",
+            "formatString": "#,0",
+            "lineageTag": "1d233f4f-bc16-4d45-968a-ebd762ca7b96",
+            "changedProperties": [
+              {
+                "property": "Name"
+              },
+              {
+                "property": "FormatString"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "payment_terms",
+        "lineageTag": "5904c13d-7353-483b-a94d-7fec0c5e6cb4",
+        "sourceLineageTag": "[dbo].[payment_terms]",
+        "columns": [
+          {
+            "name": "payment_terms",
+            "dataType": "string",
+            "sourceColumn": "payment_terms",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "9f3eaa1f-8c73-491d-a0bd-7c1ba3ff16a0",
+            "sourceLineageTag": "payment_terms",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "days_from_baseline_date_for_payment",
+            "dataType": "int64",
+            "sourceColumn": "days_from_baseline_date_for_payment",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "78ccfe51-25dc-4061-8c6f-1370034ffe41",
+            "sourceLineageTag": "days_from_baseline_date_for_payment",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "payment_terms_description",
+            "dataType": "string",
+            "sourceColumn": "payment_terms_description",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "c9bae046-46bc-435f-a248-02a15bce81d1",
+            "sourceLineageTag": "payment_terms_description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "payment_terms_combined_description",
+            "dataType": "string",
+            "sourceColumn": "payment_terms_combined_description",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "8b1e1da3-6914-4721-89f9-a9f850bb2167",
+            "sourceLineageTag": "payment_terms_combined_description",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "payment_terms",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "payment_terms",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "calendar",
+        "lineageTag": "e6e243bc-c3f7-4620-b9e7-95a592025b46",
+        "sourceLineageTag": "[dbo].[calendar]",
+        "columns": [
+          {
+            "name": "date",
+            "dataType": "dateTime",
+            "sourceColumn": "date",
+            "formatString": "General Date",
+            "sourceProviderType": "date",
+            "lineageTag": "138cac42-8348-4779-abe8-8e5b6bdd4254",
+            "sourceLineageTag": "date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "month",
+            "dataType": "int64",
+            "sourceColumn": "month",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "8888e68d-34df-460b-a868-1e851b0689c7",
+            "sourceLineageTag": "month",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "month_name",
+            "dataType": "string",
+            "sourceColumn": "month_name",
+            "sortByColumn": "month",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "5453e944-c502-4225-bd72-302a9d6ff5f4",
+            "sourceLineageTag": "month_name",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "month_name_short",
+            "dataType": "string",
+            "sourceColumn": "month_name_short",
+            "sortByColumn": "month",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "1331652b-107a-4085-a0dd-2275398c807b",
+            "sourceLineageTag": "month_name_short",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "quarter",
+            "dataType": "int64",
+            "sourceColumn": "quarter",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "00ed9e02-d468-4703-9efc-ac3bb77d3b33",
+            "sourceLineageTag": "quarter",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "year",
+            "dataType": "int64",
+            "sourceColumn": "year",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "3a181a8f-f81f-405d-8f56-f1ab7cdf3a30",
+            "sourceLineageTag": "year",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "is_after_current_date",
+            "dataType": "boolean",
+            "sourceColumn": "is_after_current_date",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "bit",
+            "lineageTag": "2dc6761c-3f9d-4e34-ad7c-842e60f51ff3",
+            "sourceLineageTag": "is_after_current_date",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "week",
+            "dataType": "int64",
+            "sourceColumn": "week",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "22985a1b-0184-4dfd-9221-5967bada7f5f",
+            "sourceLineageTag": "week",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "day_of_week",
+            "dataType": "int64",
+            "sourceColumn": "day_of_week",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "77a0a957-15ba-4969-aa38-b2ea4c4dd538",
+            "sourceLineageTag": "day_of_week",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "day_of_week_name",
+            "dataType": "string",
+            "sourceColumn": "day_of_week_name",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "64e0c772-47de-4344-bf50-84d71f9775dc",
+            "sourceLineageTag": "day_of_week_name",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "quarter_n_year",
+            "dataType": "int64",
+            "sourceColumn": "quarter_n_year",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "fc5ad875-ae2d-442d-93cc-e6f806c6b6ac",
+            "sourceLineageTag": "quarter_n_year",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "quarter_and_year",
+            "dataType": "string",
+            "sourceColumn": "quarter_and_year",
+            "sortByColumn": "quarter_n_year",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "9428f688-a2d8-4681-a06e-a3332fa6f7e8",
+            "sourceLineageTag": "quarter_and_year",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "calendar",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "calendar",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "ap_line_items_scored",
+        "lineageTag": "eb2039d3-013f-4b36-9a69-f10e7ec434a3",
+        "sourceLineageTag": "[dbo].[ap_line_items_scored]",
+        "columns": [
+          {
+            "name": "company_code",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "company_code",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "9d7f2f73-7786-484f-8b74-366fa29a7f7b",
+            "sourceLineageTag": "company_code",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "fiscal_period",
+            "dataType": "string",
+            "sourceColumn": "fiscal_period",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "e910d58e-a4bd-4dbd-9de6-e64826bec008",
+            "sourceLineageTag": "fiscal_period",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "accounting_document",
+            "dataType": "string",
+            "sourceColumn": "accounting_document",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "8fd435d8-d396-439f-91ad-f067a477e329",
+            "sourceLineageTag": "accounting_document",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "accounting_document_item",
+            "dataType": "string",
+            "sourceColumn": "accounting_document_item",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "54ffa0a6-0308-4f50-80c3-69a7e4e776da",
+            "sourceLineageTag": "accounting_document_item",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "status_of_item",
+            "dataType": "string",
+            "sourceColumn": "status_of_item",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "78a0fe17-0960-431d-8e06-f541a531bb30",
+            "sourceLineageTag": "status_of_item",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "vendor_number",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "vendor_number",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "d6ee8952-6d76-49b9-90c4-61e5bd25d0e5",
+            "sourceLineageTag": "vendor_number",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "major_commodity_code",
+            "dataType": "string",
+            "sourceColumn": "major_commodity_code",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "a7eac50a-197b-4c9e-a56a-f0f6479f61b4",
+            "sourceLineageTag": "major_commodity_code",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "minor_commodity_code",
+            "dataType": "string",
+            "sourceColumn": "minor_commodity_code",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "2217f74c-919b-4c5d-8e91-285fc2f1e9b4",
+            "sourceLineageTag": "minor_commodity_code",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "account_group",
+            "dataType": "string",
+            "sourceColumn": "account_group",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "53b050a6-77fc-4a64-b3e8-15325bddc990",
+            "sourceLineageTag": "account_group",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "document_type",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "document_type",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "1d681152-bef1-43e6-9c25-ea255a99363d",
+            "sourceLineageTag": "document_type",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "account",
+            "dataType": "string",
+            "sourceColumn": "account",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "ebaf1bd1-5da7-4621-9b89-7912cc9f59e5",
+            "sourceLineageTag": "account",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "document_date",
+            "dataType": "dateTime",
+            "sourceColumn": "document_date",
+            "formatString": "yyyy-mm-dd",
+            "sourceProviderType": "date",
+            "lineageTag": "a4a1918a-6761-44a4-a1ba-9b0d78c22b43",
+            "sourceLineageTag": "document_date",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ]
+          },
+          {
+            "name": "posting_date",
+            "dataType": "dateTime",
+            "sourceColumn": "posting_date",
+            "formatString": "yyyy-mm-dd",
+            "sourceProviderType": "date",
+            "lineageTag": "2501ed82-7d1b-4368-a396-cac04d9ee133",
+            "sourceLineageTag": "posting_date",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ]
+          },
+          {
+            "name": "entry_date",
+            "dataType": "dateTime",
+            "sourceColumn": "entry_date",
+            "formatString": "yyyy-mm-dd",
+            "sourceProviderType": "date",
+            "lineageTag": "96f1b871-8429-4009-a4a1-cbbb0074b0dd",
+            "sourceLineageTag": "entry_date",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ]
+          },
+          {
+            "name": "clearing_date",
+            "dataType": "dateTime",
+            "sourceColumn": "clearing_date",
+            "formatString": "yyyy-mm-dd",
+            "sourceProviderType": "date",
+            "lineageTag": "7102abae-1f46-4390-b798-953a8fb4f133",
+            "sourceLineageTag": "clearing_date",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ]
+          },
+          {
+            "name": "clearing_document",
+            "dataType": "string",
+            "sourceColumn": "clearing_document",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "cf80732d-b456-4770-ba28-d254654d0466",
+            "sourceLineageTag": "clearing_document",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "net_due_date",
+            "dataType": "dateTime",
+            "sourceColumn": "net_due_date",
+            "formatString": "yyyy-mm-dd",
+            "sourceProviderType": "date",
+            "lineageTag": "806d92d0-a997-46cb-b3c1-082d3e6ade51",
+            "sourceLineageTag": "net_due_date",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ]
+          },
+          {
+            "name": "due_day_of_week",
+            "dataType": "int64",
+            "sourceColumn": "due_day_of_week",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "d2a8403c-5f16-4c29-bdfc-24ee879b2087",
+            "sourceLineageTag": "due_day_of_week",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "due_day_of_month",
+            "dataType": "int64",
+            "sourceColumn": "due_day_of_month",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "48316279-1813-40a8-a4fb-452322a11f3c",
+            "sourceLineageTag": "due_day_of_month",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "due_week_of_year",
+            "dataType": "int64",
+            "sourceColumn": "due_week_of_year",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "692cf9ab-e1be-4b04-925f-59ff2c915016",
+            "sourceLineageTag": "due_week_of_year",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "due_day_of_year",
+            "dataType": "int64",
+            "sourceColumn": "due_day_of_year",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "lineageTag": "b5044af8-da1c-47d8-b17d-9ba21d57028c",
+            "sourceLineageTag": "due_day_of_year",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "baseline_date",
+            "dataType": "dateTime",
+            "sourceColumn": "baseline_date",
+            "formatString": "yyyy-mm-dd",
+            "sourceProviderType": "date",
+            "lineageTag": "de21bec5-6689-4cd2-8792-b2902d46567b",
+            "sourceLineageTag": "baseline_date",
+            "summarizeBy": "none",
+            "changedProperties": [
+              {
+                "property": "FormatString"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isCustom\":true}"
+              }
+            ]
+          },
+          {
+            "name": "country_key",
+            "dataType": "string",
+            "sourceColumn": "country_key",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "ca151496-9cf0-45ea-b529-d5c53dfe5e7f",
+            "sourceLineageTag": "country_key",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "payment_terms",
+            "dataType": "string",
+            "sourceColumn": "payment_terms",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "3ab1def3-194b-4571-8dd2-cd17fbb61aba",
+            "sourceLineageTag": "payment_terms",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "payment_block_key",
+            "dataType": "string",
+            "sourceColumn": "payment_block_key",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "1a72a986-beb5-45c4-90cd-4d966a94bd66",
+            "sourceLineageTag": "payment_block_key",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "local_currency_key",
+            "dataType": "string",
+            "sourceColumn": "local_currency_key",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "7965df52-af87-470f-94d1-d9f119397bae",
+            "sourceLineageTag": "local_currency_key",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "amount_local_currency",
+            "dataType": "double",
+            "sourceColumn": "amount_local_currency",
+            "sourceProviderType": "decimal(31, 2)",
+            "lineageTag": "47a48787-6a3c-420f-8330-8a9f9a6a9771",
+            "sourceLineageTag": "amount_local_currency",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "amount_group_currency",
+            "dataType": "double",
+            "sourceColumn": "amount_group_currency",
+            "sourceProviderType": "decimal(31, 2)",
+            "lineageTag": "8f3077ba-6dc9-4cd8-b6ae-2dfd61a75dfe",
+            "sourceLineageTag": "amount_group_currency",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "debit_credit_indicator",
+            "dataType": "string",
+            "sourceColumn": "debit_credit_indicator",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "478fcbc4-ea73-4b6c-b8ee-50c1db0fa2c2",
+            "sourceLineageTag": "debit_credit_indicator",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "item_text",
+            "dataType": "string",
+            "sourceColumn": "item_text",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "82f548a0-d45b-4f60-9eb0-926a9b84962b",
+            "sourceLineageTag": "item_text",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "delta_days_doc_clearing",
+            "dataType": "int64",
+            "sourceColumn": "delta_days_doc_clearing",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "e071349c-1313-4837-886a-e1ebcc04d765",
+            "sourceLineageTag": "delta_days_doc_clearing",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "delta_days_doc_due",
+            "dataType": "int64",
+            "sourceColumn": "delta_days_doc_due",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "5605494a-5d30-4c9d-87b6-9327efe74457",
+            "sourceLineageTag": "delta_days_doc_due",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "delta_days_due_cleared",
+            "dataType": "int64",
+            "sourceColumn": "delta_days_due_cleared",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "lineageTag": "92e3eb42-b14a-4f1d-9845-78dfbbfc9371",
+            "sourceLineageTag": "delta_days_due_cleared",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "payment_status",
+            "dataType": "string",
+            "sourceColumn": "payment_status",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "e1bec032-a023-4c98-9cbd-f25bdb1acc4d",
+            "sourceLineageTag": "payment_status",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "predicted_days_to_pay",
+            "dataType": "double",
+            "sourceColumn": "predicted_days_to_pay",
+            "sourceProviderType": "float",
+            "lineageTag": "0fdf3c43-1085-4444-939e-73456b4d22c1",
+            "sourceLineageTag": "predicted_days_to_pay",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "predicted_status",
+            "dataType": "string",
+            "sourceColumn": "predicted_status",
+            "sourceProviderType": "varchar(8000)",
+            "lineageTag": "e9645fec-0a5a-4efa-ad72-5d830a14df3c",
+            "sourceLineageTag": "predicted_status",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "ap_line_items_scored",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "ap_line_items_scored",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "7125d391-a49d-55c1-ffe1-62a26e3bb551",
+        "fromTable": "ap_line_items_scored",
+        "fromColumn": "company_code",
+        "toTable": "company_codes",
+        "toColumn": "company_code",
+        "relyOnReferentialIntegrity": true
+      },
+      {
+        "name": "d092895d-5065-e2d3-eeb9-22ee2dafd26b",
+        "fromTable": "ap_line_items_scored",
+        "fromColumn": "document_type",
+        "toTable": "document_types",
+        "toColumn": "document_type",
+        "relyOnReferentialIntegrity": true
+      },
+      {
+        "name": "6586c9d1-5c3c-f763-7995-5b04de8d393f",
+        "fromTable": "ap_line_items_scored",
+        "fromColumn": "payment_terms",
+        "toTable": "payment_terms",
+        "toColumn": "payment_terms",
+        "relyOnReferentialIntegrity": true
+      },
+      {
+        "name": "9f993dd1-3b08-47e4-ef53-205def3adaeb",
+        "fromTable": "ap_line_items_scored",
+        "fromColumn": "vendor_number",
+        "toTable": "vendors",
+        "toColumn": "vendor_number",
+        "relyOnReferentialIntegrity": true
+      },
+      {
+        "name": "4e7e6c96-7e4e-eb22-4538-b48db7db5bd8",
+        "fromTable": "ap_line_items_scored",
+        "fromColumn": "posting_date",
+        "toTable": "calendar",
+        "toColumn": "date",
+        "relyOnReferentialIntegrity": true
+      },
+      {
+        "name": "5daea0cb-878d-a0e5-c4e3-7b39c757e57a",
+        "fromTable": "ap_line_items_scored",
+        "fromColumn": "net_due_date",
+        "toTable": "calendar",
+        "toColumn": "date",
+        "isActive": false,
+        "relyOnReferentialIntegrity": true
+      },
+      {
+        "name": "f96056df-6670-9fd9-37ce-83799a55c7e5",
+        "fromTable": "ap_line_items_scored",
+        "fromColumn": "clearing_date",
+        "toTable": "calendar",
+        "toColumn": "date",
+        "isActive": false,
+        "relyOnReferentialIntegrity": true
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Version": "1.0.0",
+            "Language": "en-US"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": [
+          "let",
+          "    database = Sql.Database(\"UJWMLEES3DHELAINNTZWR6WNWM-RG5FI3DF4DHE5BHI5ZBMU67NTY.datawarehouse.fabric.microsoft.com\", \"ecafb646-5ef4-45b7-86f2-5b615d99aa15\")",
+          "in",
+          "    database"
+        ],
+        "lineageTag": "25117e25-3073-4d79-b93b-34b5e4047f78",
+        "annotations": [
+          {
+            "name": "PBI_IncludeFutureArtifacts",
+            "value": "False"
+          },
+          {
+            "name": "PBI_RemovedChildren",
+            "value": "[{\"remoteItemId\":{\"analysisServicesObject\":{\"sourceName\":null,\"sourceLineageTag\":\"[dbo].[ap_line_items]\"}},\"objectType\":\"Table\"}]"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.127.7231.2 (Main)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DatabaseQuery\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"Copilot\",\"CopilotMeasureDescriptions\"]"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":true,\"LocalPerspectives\":true,\"LocalRelationships\":true,\"Levels\":[\"Data Sources\",\"Perspectives\",\"Relationships\",\"Roles\",\"Shared Expressions\",\"Tables\",\"Tables/Calculation Items\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Translations\"]}"
+      }
+    ]
+  }
+}
